@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function CategoriesMenu() {
+const CategoriesMenu = () => {
   return (
-    <div>
-      <nav class="nav-categories">
+    <nav>
+      <nav className="nav-categories">
         <h2>Categories</h2>
 
-        <ul class="nav-menu">
-          <li class="active">
+        <ul className="nav-menu">
+          <li className="active">
             <a href="#">Channels</a>
           </li>
           <li>
@@ -24,6 +24,8 @@ export default function CategoriesMenu() {
           </li>
         </ul>
       </nav>
-    </div>
+    </nav>
   );
-}
+};
+
+export default CategoriesMenu;
