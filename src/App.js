@@ -2,13 +2,16 @@ import React from "react";
 import "./styles.css";
 import CategoriesMenu from "./components/CategoriesMenu";
 import SearchApp from "./components/SearchApp";
+import Pagination from "./components/Pagination";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <body>
-        <CategoriesMenu />
         <div class="flex-container">
+          <nav class="nav-categories">
+            <CategoriesMenu />
+          </nav>
           <section class="apps-list">
             <SearchApp />
             <ul>
@@ -112,28 +115,12 @@ function App() {
                 </div>
               </li>
             </ul>
-            <ul class="pagination">
-              <li>
-                <a href="#">&lt;</a>
-              </li>
-              <li>
-                <a href="#">1</a>
-              </li>
-              <li class="active">
-                <a href="#">2</a>
-              </li>
-              <li>
-                <a href="#">3</a>
-              </li>
-              <li>
-                <a href="#">&gt;</a>
-              </li>
-            </ul>
+            <Pagination />
           </section>
         </div>
       </body>
     </div>
   );
-}
+};
 
 export default App;
