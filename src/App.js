@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import CategoriesMenu from "./components/CategoriesMenu";
+import SearchApp from "./components/SearchApp";
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
         <CategoriesMenu />
         <div class="flex-container">
           <section class="apps-list">
-            <header>
-              <input type="text" placeholder="Search by App" />
-            </header>
+            <SearchApp />
             <ul>
               <li>
                 <div class="app-item">
